@@ -3,11 +3,15 @@ int main()
 {
 	int me,com;
 	
-	do
+	while(1)
 	{
 		scanf("%d %d",&me,&com);
-		printf("ERROR\n");
-	}while(me<1 || me>3 || com<1 || com>3);
+		if(me<1 || me>3 || com<1 || com>3)
+		{
+			printf("ERROR\n");
+		}
+		else break;
+	}
 	if(me==2&&com==0)
 	{
 		printf("WIN\n");
