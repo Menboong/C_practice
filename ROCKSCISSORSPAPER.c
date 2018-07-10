@@ -1,10 +1,13 @@
 #include<stdio.h>
-main()
+int main()
 {
 	int me,com;
 	
-	scanf("%d %d",&me,&com);
-	
+	do
+	{
+		scanf("%d %d",&me,&com);
+		printf("ERROR\n");
+	}while(-1 < me < 3 && -1 < com < 3);
 	if(me==2&&com==0)
 	{
 		printf("WIN\n");
