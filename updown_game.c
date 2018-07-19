@@ -10,9 +10,15 @@ int main()
 	
 	while(user!=com)
 	{
-		i++;
 		printf("enter a number from 1 to %d: ",RANGE);
 		scanf_s("%d", &user);
+		if(user>RANGE)
+		{
+			printf("You have entered a number greater than 50.\n");
+			printf("please enter again\n\n");
+			continue;
+		}
+		i++;
 		if (user > com)
 		{
 			printf("less than %d!\n\n", user);
