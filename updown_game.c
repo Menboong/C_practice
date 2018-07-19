@@ -15,7 +15,7 @@ int main()
 		scanf_s("%d", &user);
 		if (user > com)
 		{
-			printf("less than %d!\n", user);
+			printf("less than %d!\n\n", user);
 		}
 		else if (user==com)
 		{
@@ -23,11 +23,11 @@ int main()
 		}
 		else
 		{
-			printf("it's bigger than'%d!\n", user);
+			printf("it's bigger than'%d!\n\n", user);
 		}
 	}
-	printf("correct.");
-	printf(" the number of attempts is %d.", i);
+	printf("correct.\n");
+	printf("the number of attempts is %d.\n", i);
 
 	return 0;
 }
