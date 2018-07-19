@@ -1,14 +1,17 @@
 #include<stdio.h>
-#define Key 14
+#include<stdlib.h>
+#include<time.h>
+#define RANGE 50
 
 int main()
 {
-	int i=0,user=0,com = Key;
-	//scanf_s("%d", &user);
+	srand(time(NULL));
+	int i=0,user=0,com = (rand()%RANGE)+1;
+	
 	while(user!=com)
 	{
 		i++;
-		printf("enter a number from 1 to 30: ");
+		printf("enter a number from 1 to %d: ",RANGE);
 		scanf_s("%d", &user);
 		if (user > com)
 		{
