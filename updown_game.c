@@ -17,13 +17,13 @@ int main()
 		{
 			printf("less than %d!\n", user);
 		}
+		else if (user==com)
+		{
+			break;
+		}
 		else
 		{
 			printf("it's bigger than'%d!\n", user);
-		}
-		if (user == com)
-		{
-			break;
 		}
 	}
 	printf("correct.");
