@@ -7,27 +7,33 @@ main()
 {	
 	int cnt = 0;
 	int i;
+	int n=0;
 	char key;
 	
 	while(1)
-	{
-		printf("키보드를 누르면 아파여...\n----------\n|        |\n|  |  |  |\n|   ㅅ   |\n----------\n");
+	{	
+		for(i=0;i<n;i++)
+		{
+			printf("■");
+		}
+		printf("\n키보드를 누르면 아파여...\n----------\n|        |\n|  |  |  |\n|   ㅅ   |\n----------\n");
 		getch();
 		system("cls");
 		printf("키보드를 누르면 아파여...\n----------\n|        |\n|  >  <  |\n|   ㅅ   |\n----------\n");
-		Sleep(100);
+		Sleep(500);
 		system("cls");
 		cnt++;
 		
-		if(cnt >= 20)
+		if(cnt == 20)
 		{
 			printf("심심이의 분노게이지가 한칸 올라갑니다.\n");
 			printf("----------\n|        |\n| ㅜ  ㅜ |\n|   ㅅ   |\n----------\n끄앙..\n");
 			printf("아무키나 눌러주세요.\n");
 			getch();
 			system("cls");
+			n++;
 		}
-		else if(cnt>=40)
+		else if(cnt==40)
 		{
 			
 			printf("심심이의 분노게이지가 한칸 올라갑니다.\n");
@@ -35,8 +41,9 @@ main()
 			printf("아무키나 눌러주세요.\n");
 			getch();
 			system("cls");
+			n++;
 		}
-		else if(cnt >=60)
+		else if(cnt ==60)
 		{
 			
 			printf("심심이의 분노게이지가 한칸 올라갑니다.\n");
@@ -44,8 +51,9 @@ main()
 			printf("아무키나 눌러주세요.\n");
 			getch();
 			system("cls");
+			n++;
 		}
-		else if(cnt >=80)
+		else if(cnt ==80)
 		{
 			
 			printf("심심이의 분노게이지가 한칸 올라갑니다.\n");
@@ -53,8 +61,9 @@ main()
 			printf("아무키나 눌러주세요.\n");
 			getch();
 			system("cls");
+			n++;
 		}
-		else if(cnt >=100)
+		else if(cnt ==100)
 		{
 			
 			printf("심심이의 분노게이지가 한칸 올라갑니다.\n");
@@ -62,6 +71,7 @@ main()
 			printf("아무키나 눌러주세요.\n");
 			getch();
 			system("cls");
+			n++;
 		}
 		else if(cnt >=101)
 		{
