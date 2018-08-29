@@ -6,11 +6,11 @@ struct Person
 	char name [20];
 	int age;
 	char address[100];
-};
+}p1;
 
 int main()
 {
-	struct Person p1;
+	//struct Person p1;
 	
 	strcpy(p1.name,"ÃÖ¼Ò¿µ");
 	p1.age = 17;
