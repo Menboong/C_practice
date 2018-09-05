@@ -9,9 +9,10 @@ struct Person
 }class[30];
 
 int main()
-{
-	class[0] = {"장소희",17,"이천"};	
-	class[1] = {"최소영",17,"천안"};
+{ 
+	strcpy(class[0].name,"최소영");
+	strcpy(class[0].age,17);
+	strcpy(class[0].address,"천안");
 	
 	printf("이름: %s\n",class[0].name);
 	printf("나이: %d\n",class[0].age);
