@@ -10,9 +10,9 @@ struct Person
 
 int main()
 {
-  //struct Person p1;
-	struct Person p2 = {"장소희",17,"이천"};	
-	strcpy(p1.name,"최소영");
+	  //struct Person p1;z
+		struct Person p2 = {"장소희",17,"이천"};	
+		strcpy(p1.name,"최소영");
 	p1.age = 17;
 	strcpy(p1.address, "천안");
 	
