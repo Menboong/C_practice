@@ -27,3 +27,5 @@ This is place that I practice C language
   - strange vedingmachine
 - data structure
   - sort
+  
+**there are also many other majors.**
