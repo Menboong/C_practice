@@ -2,17 +2,17 @@
 #define __ARR_STACK_H__
 
 #define SLength 5
-typedef int Data;
+typedef int Sdata;
 
 typedef struct ARRSTACK
 {
-	Data Sarr[SLength];
+	Sdata Sarr[SLength];
 	int topindex;	
 }stack;
 
 void Sinit(stack *pstack);
-void Spush(stack *pstack, int data);
-void Spop(stack *pstack);
-void Speek(stack *pstack);
+int Spush(stack *pstack, int data);
+int Spop(stack *pstack, Sdata *pdata);
+int Speek(stack *pstack, Sdata *pdata);
 
 #endif

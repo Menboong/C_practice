@@ -6,11 +6,11 @@ void Sinit(stack *pstack)
 	pstack -> topindex = -1;
 }
 
-void Spush(stack *pstack, int data)
+int Spush(stack *pstack, int data)
 {
 	if(pstack->topindex>=SLength-1)
 	{
-		printf("\n\nO V E R F L O W\n\n");
+		return -1;
 	}
 	else
 	{
@@ -20,31 +20,29 @@ void Spush(stack *pstack, int data)
 	}
 }
 
-void Spop(stack *pstack)
-{
-	int output;
-	
+int Spop(stack *pstack, Sdata *pdata)
+{	
 	if(pstack->topindex<=-1)
 	{
-		printf("\n\nU N D E R F L O W\n\n");
+		return -1;
 	}
 	else
 	{
-		output = pstack -> Sarr[pstack->topindex];
+		*pdata = pstack -> Sarr[pstack->topindex];
 		pstack->topindex--;
-		printf("삭제된 값: %d",output);
+		return 0;
 	}
 }
 
-void Speek(stack *pstack)
+int Speek(stack *pstack, Sdata *pdata)
 {
-	printf("현재 마지막으로 있는 값: ");
 	if(pstack->topindex<=-1)
 	{
-		printf("N O T H I N G\n");
+		return -1;
 	}
 	else
 	{
-		printf("%d", pstack -> Sarr[pstack->topindex]);
+		*pdata = pstack -> Sarr[pstack->topindex];
+		return 0;
 	}
 }
