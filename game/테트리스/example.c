@@ -25,7 +25,7 @@
 #define MAIN_X 11 //게임판 가로크기 
 #define MAIN_Y 23 //게임판 세로크기 
 #define MAIN_X_ADJ 3 //게임판 위치조정 
-#define MAIN_Y_ADJ 1 //게임판 위치조정 
+#define MAIN_Y_ADJ 3 //게임판 위치조정 
  
 #define STATUS_X_ADJ MAIN_X_ADJ+MAIN_X+1 //게임정보표시 위치조정 
  
