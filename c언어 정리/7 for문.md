@@ -130,3 +130,14 @@ Hello, world 2
 Hello, world 1
 ```
 
+
+
+## 변수 2개 사용
+
+```c
+for (int i = 0, j = 0; i < 10; i++, j += 2)    // i는 1씩 증가, j는 2씩 증가
+    {
+        printf("i: %d, j: %d\n", i, j);
+    }
+```
+
